@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>瀑布流</title>
+	<script src="index.js"></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		ul{
+			list-style: none;
+		}
+		li{
+			height:40px;
+			line-height: 40px;
+			text-align: center;
+			border-bottom:1px solid red;
+			font-size:36px;
+		}
+		div{
+			min-height: 1200px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		
+		
+	</div>
+	
+</body>
+<script>
+    window.onload=function(){
+    	var pageNum=0;
+	    appendHTML(date[0]);
+		function appendHTML(data){
+			var length=data.length;
+			console.log(data)
+			var html="";
+			html+="<ul>";
+			for(var i=0;i<length;i++){
+				html+="<li>"+data[i].title+"</li>";
+			}
+			html+="</ul>";
+			document.querySelector("div").innerHTML+=html;
+		}
+		window.onscroll=function(){
+			var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+			var height=document.body.scrollHeight;
+			var windowHeight=window.innerHeight
+			if(scrollTop>=(height-windowHeight)){
+				console.log(1)
+				Ajax("GET","http://10.80.13.114/pubuliu/index.php?page=1",null,function(data){
+					var date=JSON.parse(data);
+					console.log(date)
+					appendHTML(date[pageNum])
+					pageNum++;
+					
+				});
+			}
+		}
+
+	
+    }
+</script>
+</html>

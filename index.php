@@ -1,0 +1,74 @@
+<?php 
+	header("Content-Type: application/json;charset=utf-8"); 
+	$page1=array(
+	array(
+		array("title"=>"大家好，大家辛苦了1"),
+		array("title"=>"大家好，大家辛苦了2"),
+		array("title"=>"大家好，大家辛苦了3"),
+		array("title"=>"大家好，大家辛苦了4"),
+		array("title"=>"大家好，大家辛苦了5"),
+		array("title"=>"大家好，大家辛苦了6"),
+		array("title"=>"大家好，大家辛苦了7"),
+		array("title"=>"大家好，大家辛苦了8"),
+		array("title"=>"大家好，大家辛苦了9"),
+		array("title"=>"大家好，大家辛苦了10"),
+		array("title"=>"大家好，大家辛苦了11")
+		),
+	array(
+		array("title"=>"大家好，大家辛苦了51"),
+		array("title"=>"大家好，大家辛苦了2"),
+		array("title"=>"大家好，大家辛苦了3"),
+		array("title"=>"大家好，大家辛苦了4"),
+		array("title"=>"大家好，大家辛苦了5"),
+		array("title"=>"大家好，大家辛苦了6"),
+		array("title"=>"大家好，大家辛苦了7"),
+		array("title"=>"大家好，大家辛苦了8"),
+		array("title"=>"大家好，大家辛苦了9"),
+		array("title"=>"大家好，大家辛苦了10"),
+		array("title"=>"大家好，大家辛苦了11")
+		),
+	array(
+		array("title"=>"大家好，大家辛苦了91"),
+		array("title"=>"大家好，大家辛苦了2"),
+		array("title"=>"大家好，大家辛苦了3"),
+		array("title"=>"大家好，大家辛苦了4"),
+		array("title"=>"大家好，大家辛苦了5"),
+		array("title"=>"大家好，大家辛苦了6"),
+		array("title"=>"大家好，大家辛苦了7"),
+		array("title"=>"大家好，大家辛苦了8"),
+		array("title"=>"大家好，大家辛苦了9"),
+		array("title"=>"大家好，大家辛苦了10"),
+		array("title"=>"大家好，大家辛苦了11")
+		),
+	array(
+		array("title"=>"大家好，大家辛苦了81"),
+		array("title"=>"大家好，大家辛苦了2"),
+		array("title"=>"大家好，大家辛苦了3"),
+		array("title"=>"大家好，大家辛苦了4"),
+		array("title"=>"大家好，大家辛苦了5"),
+		array("title"=>"大家好，大家辛苦了6"),
+		array("title"=>"大家好，大家辛苦了7"),
+		array("title"=>"大家好，大家辛苦了8"),
+		array("title"=>"大家好，大家辛苦了9"),
+		array("title"=>"大家好，大家辛苦了10"),
+		array("title"=>"大家好，大家辛苦了11")
+		),
+	array(
+		array("title"=>"大家好，大家辛苦了1"),
+		array("title"=>"大家好，大家辛苦了2"),
+		array("title"=>"大家好，大家辛苦了3"),
+		array("title"=>"大家好，大家辛苦了4"),
+		array("title"=>"大家好，大家辛苦了5"),
+		array("title"=>"大家好，大家辛苦了6"),
+		array("title"=>"大家好，大家辛苦了7"),
+		array("title"=>"大家好，大家辛苦了8"),
+		array("title"=>"大家好，大家辛苦了9"),
+		array("title"=>"大家好，大家辛苦了10"),
+		array("title"=>"大家好，大家辛苦了11")
+		),
+	);
+	// if($pageNum==1){
+	echo json_encode($page1);
+	// }
+	
+ ?>
